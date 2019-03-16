@@ -45,7 +45,7 @@ describe('Models', function() {
         });
       });
 
-      xit('requires `firstName`', () => {
+      it('requires `firstName`', () => {
         student.firstName = null;
         return student.validate().then(
           () => {
